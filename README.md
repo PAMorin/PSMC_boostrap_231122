@@ -21,6 +21,8 @@ Input files:
 * reference genome fasta file
 
 Use:
+The bash script is written to run with SLURM on the NOAA SEDNA genomic analysis cluster.
+
 The bash script has 11 variable parameters to be modified for each PSMC analysis. Variables v1-8 are specific to each assembly and species. Variables v9-11 are specific to PSMC.
 
 The script creates a sudirectory called "PSMC" within the directory containing the bam file, then generates the diploid consensus genome from the bam file. PSMC analysis is run on the diploid consensus genome, and then bootstrapped 100 times. The PSMC output are plotted from the *out.gp file to generate *out.eps files. Plots can be modified (e.g., change axis ranges or plot colors) by editing the *out.gp files and re-plotting using gnuplot. 
