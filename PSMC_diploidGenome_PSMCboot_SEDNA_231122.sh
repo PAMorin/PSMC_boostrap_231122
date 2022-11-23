@@ -51,8 +51,8 @@ REFERENCE=${REFDIR}/${v6}
 BAMDIR=${v2}
 BAM=${BAMDIR}/${v3} # repeat masked assembly
 
-mkdir -p ${BAMDIR}/PSMC_test
-OUTDIR=${BAMDIR}/PSMC_test # make PSMC folder in bamdir first
+mkdir -p ${BAMDIR}/PSMC
+OUTDIR=${BAMDIR}/PSMC # make PSMC folder in bamdir first
 DIPLOID=${SAMPLE}_diploid.fq.gz
 
 # diploid genome parameters
